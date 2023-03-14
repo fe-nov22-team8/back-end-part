@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "devDependencies": {
     "@mate-academy/eslint-config": "0.0.22",
     "@swc/cli": "^0.1.62",
@@ -28,8 +27,7 @@
     "fix-style": "npm run format && npm run lint -- --fix",
     "prepare": "husky install",
     "build": "swc src -d dist --source-maps",
-    "start": "nodemon src/app.js"
-
+    "start": "nodemon src/app.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -38,7 +36,7 @@
     "sequelize": "^6.29.3"
   },
   "lint-staged": {
-    "*.js": "npm run lint"
+    "*.ts": "npm run lint"
   },
   "name": "back-end-part",
   "description": "Backend part of the project",
