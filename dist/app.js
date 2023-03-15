@@ -1,15 +1,15 @@
-import express from 'express';
+import express from 'express'
 
-const app = express();
+const app = express()
 
-app.get('/', function(req, res) {
-  res.send('Hello World!');
-});
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
 
-const port = 5000;
+const port = 5000
 
-app.listen(port, function() {
+app.listen(port, function () {
   // console.log('Server running at http://localhost:'.concat(port));
-});
+})
 
 // # sourceMappingURL=app.js.map

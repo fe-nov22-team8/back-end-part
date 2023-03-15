@@ -1,13 +1,15 @@
-import express from 'express';
+import express from 'express'
+import cors from 'cors'
+import { phoneRouter } from './routes/phones'
 
-const app = express();
+const app = express()
 
-app.use('/', (req, res) => {
-  res.send('Hello World!');
-});
+app.use(cors())
 
-const port = 5000;
+app.use('/phones', phoneRouter)
+
+const port = 5000
 
 app.listen(port, () => {
   // console.log(`Server running at http://localhost:${port}`);
-});
+})
