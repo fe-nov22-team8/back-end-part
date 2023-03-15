@@ -1,8 +1,11 @@
 import express from 'express';
 import cors from 'cors';
 import { phoneRouter } from './routes/phones';
+import { dbInit } from './utils/initDB';
 
 const app = express();
+
+dbInit();
 
 app.use(cors());
 

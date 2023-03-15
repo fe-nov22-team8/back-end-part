@@ -1,5 +1,3 @@
-'use strict';
-
 import { Phone } from '../model/phones';
 import { dbInit } from './initDB';
 
@@ -7,6 +5,4 @@ import { dbInit } from './initDB';
   dbInit();
 
   await Phone.sync({ alter: true });
-
-  console.log('synced!');
 })();
