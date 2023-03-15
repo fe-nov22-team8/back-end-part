@@ -1,4 +1,4 @@
-import { type Phone } from '../types/phone'
+import { type Phone } from '../types/phone';
 
 const phones: Phone[] = [
   {
@@ -1066,7 +1066,7 @@ const phones: Phone[] = [
     year: 2018,
     image: 'img/phones/apple-iphone-xr/yellow/00.jpg'
   }
-]
+];
 
 export const getAll = (): Phone[] => {
   return phones;

@@ -12,6 +12,6 @@
   },
   "rules": {
     "semi": 0,
-    "@typescript-eslint/semi": 0
+    "@typescript-eslint/semi": "off"
   }
 }
