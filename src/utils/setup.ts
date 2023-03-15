@@ -1,12 +1,12 @@
-'use strict'
+'use strict';
 
-import { Phone } from "../model/phones";
-import { dbInit } from "./initDB"
+import { Phone } from '../model/phones';
+import { dbInit } from './initDB';
 
 (async () => {
   dbInit();
 
-  await Phone.sync({ alter: true })
+  await Phone.sync({ alter: true });
 
-  console.log('synced!')
-})()
+  console.log('synced!');
+})();
