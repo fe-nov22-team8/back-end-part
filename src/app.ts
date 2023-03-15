@@ -1,10 +1,12 @@
 import express from 'express';
+import cors from 'cors';
+import { phoneRouter } from './routes/phones';
 
 const app = express();
 
-app.use('/', (req, res) => {
-  res.send('Hello World!');
-});
+app.use(cors());
+
+app.use('/phones', phoneRouter);
 
 const port = 5000;
 
