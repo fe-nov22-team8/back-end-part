@@ -6,6 +6,8 @@ const app = express();
 
 app.use(cors());
 
+app.use(express.static('public'));
+
 app.use('/phones', phoneRouter);
 
 const port = 5000;
