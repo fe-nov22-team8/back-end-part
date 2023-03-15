@@ -14,7 +14,7 @@ const phones: Phone[] = [
     color: 'black',
     ram: '2GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7/black/00.jpg'
+    image: 'img/phones/apple-iphone-7/black/00.jpg',
   },
   {
     id: '2',
@@ -29,7 +29,7 @@ const phones: Phone[] = [
     color: 'black',
     ram: '3GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7-plus/black/00.jpg'
+    image: 'img/phones/apple-iphone-7-plus/black/00.jpg',
   },
   {
     id: '3',
@@ -44,7 +44,7 @@ const phones: Phone[] = [
     color: 'gold',
     ram: '2GB',
     year: 2017,
-    image: 'img/phones/apple-iphone-8/gold/00.jpg'
+    image: 'img/phones/apple-iphone-8/gold/00.jpg',
   },
   {
     id: '4',
@@ -59,7 +59,7 @@ const phones: Phone[] = [
     color: 'black',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/black/00.jpg'
+    image: 'img/phones/apple-iphone-11/black/00.jpg',
   },
   {
     id: '5',
@@ -74,7 +74,7 @@ const phones: Phone[] = [
     color: 'yellow',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/yellow/00.jpg'
+    image: 'img/phones/apple-iphone-11/yellow/00.jpg',
   },
   {
     id: '6',
@@ -89,7 +89,7 @@ const phones: Phone[] = [
     color: 'green',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/green/00.jpg'
+    image: 'img/phones/apple-iphone-11/green/00.jpg',
   },
   {
     id: '7',
@@ -104,7 +104,7 @@ const phones: Phone[] = [
     color: 'gold',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/gold/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro/gold/00.jpg',
   },
   {
     id: '8',
@@ -119,7 +119,7 @@ const phones: Phone[] = [
     color: 'midnightgreen',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/midnightgreen/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro/midnightgreen/00.jpg',
   },
   {
     id: '9',
@@ -134,7 +134,7 @@ const phones: Phone[] = [
     color: 'silver',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/silver/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro/silver/00.jpg',
   },
   {
     id: '10',
@@ -149,7 +149,7 @@ const phones: Phone[] = [
     color: 'spacegray',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/spacegray/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro-max/spacegray/00.jpg',
   },
   {
     id: '11',
@@ -164,7 +164,7 @@ const phones: Phone[] = [
     color: 'gold',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/gold/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro-max/gold/00.jpg',
   },
   {
     id: '12',
@@ -179,7 +179,7 @@ const phones: Phone[] = [
     color: 'spacegray',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/spacegray/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro-max/spacegray/00.jpg',
   },
   {
     id: '13',
@@ -194,7 +194,7 @@ const phones: Phone[] = [
     color: 'red',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/red/00.jpg'
+    image: 'img/phones/apple-iphone-xr/red/00.jpg',
   },
   {
     id: '14',
@@ -209,7 +209,7 @@ const phones: Phone[] = [
     color: 'white',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/white/00.jpg'
+    image: 'img/phones/apple-iphone-xr/white/00.jpg',
   },
   {
     id: '15',
@@ -224,7 +224,7 @@ const phones: Phone[] = [
     color: 'spacegray',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs/spacegray/00.jpg'
+    image: 'img/phones/apple-iphone-xs/spacegray/00.jpg',
   },
   {
     id: '16',
@@ -239,7 +239,7 @@ const phones: Phone[] = [
     color: 'gold',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs-max/gold/00.jpg'
+    image: 'img/phones/apple-iphone-xs-max/gold/00.jpg',
   },
   {
     id: '17',
@@ -254,7 +254,7 @@ const phones: Phone[] = [
     color: 'silver',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs-max/silver/00.jpg'
+    image: 'img/phones/apple-iphone-xs-max/silver/00.jpg',
   },
   {
     id: '18',
@@ -269,7 +269,7 @@ const phones: Phone[] = [
     color: 'gold',
     ram: '2GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7/gold/00.jpg'
+    image: 'img/phones/apple-iphone-7/gold/00.jpg',
   },
   {
     id: '19',
@@ -284,7 +284,7 @@ const phones: Phone[] = [
     color: 'silver',
     ram: '3GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7-plus/silver/00.jpg'
+    image: 'img/phones/apple-iphone-7-plus/silver/00.jpg',
   },
   {
     id: '20',
@@ -299,7 +299,7 @@ const phones: Phone[] = [
     color: 'spacegray',
     ram: '2GB',
     year: 2017,
-    image: 'img/phones/apple-iphone-8/spacegray/00.jpg'
+    image: 'img/phones/apple-iphone-8/spacegray/00.jpg',
   },
   {
     id: '21',
@@ -314,7 +314,7 @@ const phones: Phone[] = [
     color: 'green',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/green/00.jpg'
+    image: 'img/phones/apple-iphone-11/green/00.jpg',
   },
   {
     id: '22',
@@ -329,7 +329,7 @@ const phones: Phone[] = [
     color: 'purple',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/purple/00.jpg'
+    image: 'img/phones/apple-iphone-11/purple/00.jpg',
   },
   {
     id: '23',
@@ -344,7 +344,7 @@ const phones: Phone[] = [
     color: 'yellow',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/yellow/00.jpg'
+    image: 'img/phones/apple-iphone-11/yellow/00.jpg',
   },
   {
     id: '24',
@@ -359,7 +359,7 @@ const phones: Phone[] = [
     color: 'gold',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/gold/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro/gold/00.jpg',
   },
   {
     id: '25',
@@ -374,7 +374,7 @@ const phones: Phone[] = [
     color: 'spacegray',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/spacegray/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro/spacegray/00.jpg',
   },
   {
     id: '26',
@@ -389,7 +389,7 @@ const phones: Phone[] = [
     color: 'silver',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/silver/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro-max/silver/00.jpg',
   },
   {
     id: '27',
@@ -404,7 +404,7 @@ const phones: Phone[] = [
     color: 'midnightgreen',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/midnightgreen/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro-max/midnightgreen/00.jpg',
   },
   {
     id: '28',
@@ -419,7 +419,7 @@ const phones: Phone[] = [
     color: 'silver',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/silver/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro-max/silver/00.jpg',
   },
   {
     id: '29',
@@ -434,7 +434,7 @@ const phones: Phone[] = [
     color: 'white',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/white/00.jpg'
+    image: 'img/phones/apple-iphone-xr/white/00.jpg',
   },
   {
     id: '30',
@@ -449,7 +449,7 @@ const phones: Phone[] = [
     color: 'coral',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/coral/00.jpg'
+    image: 'img/phones/apple-iphone-xr/coral/00.jpg',
   },
   {
     id: '31',
@@ -464,7 +464,7 @@ const phones: Phone[] = [
     color: 'gold',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs/gold/00.jpg'
+    image: 'img/phones/apple-iphone-xs/gold/00.jpg',
   },
   {
     id: '32',
@@ -479,7 +479,7 @@ const phones: Phone[] = [
     color: 'spacegray',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs/spacegray/00.jpg'
+    image: 'img/phones/apple-iphone-xs/spacegray/00.jpg',
   },
   {
     id: '33',
@@ -494,7 +494,7 @@ const phones: Phone[] = [
     color: 'silver',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs-max/silver/00.jpg'
+    image: 'img/phones/apple-iphone-xs-max/silver/00.jpg',
   },
   {
     id: '34',
@@ -509,7 +509,7 @@ const phones: Phone[] = [
     color: 'gold',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs-max/gold/00.jpg'
+    image: 'img/phones/apple-iphone-xs-max/gold/00.jpg',
   },
   {
     id: '35',
@@ -524,7 +524,7 @@ const phones: Phone[] = [
     color: 'rosegold',
     ram: '2GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7/rosegold/00.jpg'
+    image: 'img/phones/apple-iphone-7/rosegold/00.jpg',
   },
   {
     id: '36',
@@ -539,7 +539,7 @@ const phones: Phone[] = [
     color: 'purple',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/purple/00.jpg'
+    image: 'img/phones/apple-iphone-11/purple/00.jpg',
   },
   {
     id: '37',
@@ -554,7 +554,7 @@ const phones: Phone[] = [
     color: 'red',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/red/00.jpg'
+    image: 'img/phones/apple-iphone-11/red/00.jpg',
   },
   {
     id: '38',
@@ -569,7 +569,7 @@ const phones: Phone[] = [
     color: 'black',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/black/00.jpg'
+    image: 'img/phones/apple-iphone-11/black/00.jpg',
   },
   {
     id: '39',
@@ -584,7 +584,7 @@ const phones: Phone[] = [
     color: 'red',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/red/00.jpg'
+    image: 'img/phones/apple-iphone-11/red/00.jpg',
   },
   {
     id: '40',
@@ -599,7 +599,7 @@ const phones: Phone[] = [
     color: 'midnightgreen',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/midnightgreen/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro/midnightgreen/00.jpg',
   },
   {
     id: '41',
@@ -614,7 +614,7 @@ const phones: Phone[] = [
     color: 'silver',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/silver/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro/silver/00.jpg',
   },
   {
     id: '42',
@@ -629,7 +629,7 @@ const phones: Phone[] = [
     color: 'gold',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/gold/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro/gold/00.jpg',
   },
   {
     id: '43',
@@ -644,7 +644,7 @@ const phones: Phone[] = [
     color: 'midnightgreen',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/midnightgreen/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro-max/midnightgreen/00.jpg',
   },
   {
     id: '44',
@@ -659,7 +659,7 @@ const phones: Phone[] = [
     color: 'spacegray',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/spacegray/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro-max/spacegray/00.jpg',
   },
   {
     id: '45',
@@ -674,7 +674,7 @@ const phones: Phone[] = [
     color: 'coral',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/coral/00.jpg'
+    image: 'img/phones/apple-iphone-xr/coral/00.jpg',
   },
   {
     id: '46',
@@ -689,7 +689,7 @@ const phones: Phone[] = [
     color: 'red',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/red/00.jpg'
+    image: 'img/phones/apple-iphone-xr/red/00.jpg',
   },
   {
     id: '47',
@@ -704,7 +704,7 @@ const phones: Phone[] = [
     color: 'gold',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs/gold/00.jpg'
+    image: 'img/phones/apple-iphone-xs/gold/00.jpg',
   },
   {
     id: '48',
@@ -719,7 +719,7 @@ const phones: Phone[] = [
     color: 'spacegray',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs-max/spacegray/00.jpg'
+    image: 'img/phones/apple-iphone-xs-max/spacegray/00.jpg',
   },
   {
     id: '49',
@@ -734,7 +734,7 @@ const phones: Phone[] = [
     color: 'rosegold',
     ram: '3GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7-plus/rosegold/00.jpg'
+    image: 'img/phones/apple-iphone-7-plus/rosegold/00.jpg',
   },
   {
     id: '50',
@@ -749,7 +749,7 @@ const phones: Phone[] = [
     color: 'white',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/white/00.jpg'
+    image: 'img/phones/apple-iphone-11/white/00.jpg',
   },
   {
     id: '51',
@@ -764,7 +764,7 @@ const phones: Phone[] = [
     color: 'green',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/green/00.jpg'
+    image: 'img/phones/apple-iphone-11/green/00.jpg',
   },
   {
     id: '52',
@@ -779,7 +779,7 @@ const phones: Phone[] = [
     color: 'white',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/white/00.jpg'
+    image: 'img/phones/apple-iphone-11/white/00.jpg',
   },
   {
     id: '53',
@@ -794,7 +794,7 @@ const phones: Phone[] = [
     color: 'black',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/black/00.jpg'
+    image: 'img/phones/apple-iphone-11/black/00.jpg',
   },
   {
     id: '54',
@@ -809,7 +809,7 @@ const phones: Phone[] = [
     color: 'white',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/white/00.jpg'
+    image: 'img/phones/apple-iphone-11/white/00.jpg',
   },
   {
     id: '55',
@@ -824,7 +824,7 @@ const phones: Phone[] = [
     color: 'spacegray',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/spacegray/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro/spacegray/00.jpg',
   },
   {
     id: '56',
@@ -839,7 +839,7 @@ const phones: Phone[] = [
     color: 'midnightgreen',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/midnightgreen/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro/midnightgreen/00.jpg',
   },
   {
     id: '57',
@@ -854,7 +854,7 @@ const phones: Phone[] = [
     color: 'gold',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/gold/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro-max/gold/00.jpg',
   },
   {
     id: '58',
@@ -869,7 +869,7 @@ const phones: Phone[] = [
     color: 'silver',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/silver/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro-max/silver/00.jpg',
   },
   {
     id: '59',
@@ -884,7 +884,7 @@ const phones: Phone[] = [
     color: 'midnightgreen',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/midnightgreen/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro-max/midnightgreen/00.jpg',
   },
   {
     id: '60',
@@ -899,7 +899,7 @@ const phones: Phone[] = [
     color: 'yellow',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/yellow/00.jpg'
+    image: 'img/phones/apple-iphone-xr/yellow/00.jpg',
   },
   {
     id: '61',
@@ -914,7 +914,7 @@ const phones: Phone[] = [
     color: 'silver',
     ram: '2GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7/silver/00.jpg'
+    image: 'img/phones/apple-iphone-7/silver/00.jpg',
   },
   {
     id: '62',
@@ -929,7 +929,7 @@ const phones: Phone[] = [
     color: 'purple',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/purple/00.jpg'
+    image: 'img/phones/apple-iphone-11/purple/00.jpg',
   },
   {
     id: '63',
@@ -944,7 +944,7 @@ const phones: Phone[] = [
     color: 'gold',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/gold/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro-max/gold/00.jpg',
   },
   {
     id: '64',
@@ -959,7 +959,7 @@ const phones: Phone[] = [
     color: 'yellow',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/yellow/00.jpg'
+    image: 'img/phones/apple-iphone-11/yellow/00.jpg',
   },
   {
     id: '65',
@@ -974,7 +974,7 @@ const phones: Phone[] = [
     color: 'spacegray',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/spacegray/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro/spacegray/00.jpg',
   },
   {
     id: '66',
@@ -989,7 +989,7 @@ const phones: Phone[] = [
     color: 'silver',
     ram: '2GB',
     year: 2017,
-    image: 'img/phones/apple-iphone-8/silver/00.jpg'
+    image: 'img/phones/apple-iphone-8/silver/00.jpg',
   },
   {
     id: '67',
@@ -1004,7 +1004,7 @@ const phones: Phone[] = [
     color: 'red',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/red/00.jpg'
+    image: 'img/phones/apple-iphone-11/red/00.jpg',
   },
   {
     id: '68',
@@ -1019,7 +1019,7 @@ const phones: Phone[] = [
     color: 'spacegray',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs-max/spacegray/00.jpg'
+    image: 'img/phones/apple-iphone-xs-max/spacegray/00.jpg',
   },
   {
     id: '69',
@@ -1034,7 +1034,7 @@ const phones: Phone[] = [
     color: 'gold',
     ram: '3GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7-plus/gold/00.jpg'
+    image: 'img/phones/apple-iphone-7-plus/gold/00.jpg',
   },
   {
     id: '70',
@@ -1049,7 +1049,7 @@ const phones: Phone[] = [
     color: 'silver',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/silver/00.jpg'
+    image: 'img/phones/apple-iphone-11-pro/silver/00.jpg',
   },
   {
     id: '71',
@@ -1064,8 +1064,8 @@ const phones: Phone[] = [
     color: 'yellow',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/yellow/00.jpg'
-  }
+    image: 'img/phones/apple-iphone-xr/yellow/00.jpg',
+  },
 ];
 
 export const getAll = (): Phone[] => {
