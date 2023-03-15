@@ -30,12 +30,15 @@
     "fix-style": "npm run format && npm run lint",
     "prepare": "husky install",
     "build": "swc src -d dist --source-maps",
-    "start": "nodemon src/app.ts"
+    "start": "nodemon src/app.ts",
+    "setup": "ts-node src/utils/setup.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "pg": "^8.10.0",
+    "pg-hstore": "^2.3.4",
+    "reflect-metadata": "^0.1.13",
     "sequelize": "^6.29.3"
   },
   "lint-staged": {

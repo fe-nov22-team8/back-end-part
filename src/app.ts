@@ -11,5 +11,5 @@ app.use('/phones', phoneRouter);
 const port = 5000;
 
 app.listen(port, () => {
-  // console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server running at http://localhost:${port}`);
 });
