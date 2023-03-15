@@ -11,7 +11,7 @@ app.use(cors());
 
 app.use(express.static('public'));
 
-app.use('/phones', phoneRouter);
+app.use('/products', phoneRouter);
 
 const port = 5000;
 
