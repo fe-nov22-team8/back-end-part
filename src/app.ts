@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { phoneRouter } from './routes/phones';
+import { productRouter } from './routes/products';
 import { dbInit } from './utils/initDB';
 
 const app = express();
@@ -11,7 +11,7 @@ app.use(cors());
 
 app.use(express.static('public'));
 
-app.use('/products', phoneRouter);
+app.use('/products', productRouter);
 
 const port = 5000;
 

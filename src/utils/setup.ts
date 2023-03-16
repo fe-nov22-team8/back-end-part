@@ -1,4 +1,4 @@
-import { Phone } from '../model/phones';
+import { Phone } from '../model/products';
 import { dbInit } from './initDB';
 
 (async () => {
