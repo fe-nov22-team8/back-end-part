@@ -1,4 +1,3 @@
-
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Product } from '../model/product';
 import { dbInit } from './initDB';
@@ -19,20 +18,18 @@ jsonsInDir.forEach((file) => {
   phones.push(json);
 });
 
-
 (async () => {
   dbInit();
 
   const a = phones.map((phone) => {
     const { id, namespaceId, capacityAvailable } = phone;
-  
+
     return {
       id,
       namespaceId,
       capacityAvailable,
-    }
-  }
-)
+    };
+  });
 
   await Test.bulkCreate(a);
 
