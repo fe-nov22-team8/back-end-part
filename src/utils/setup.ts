@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Product } from '../model/product';
 import { dbInit } from './initDB';
