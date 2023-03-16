@@ -1,4 +1,4 @@
-import { Phone } from '../model/phones';
+import { Phone } from '../model/product';
 import { Phone as PhoneType } from '../types/phone';
 
 export const getAll = async (): Promise<PhoneType[]> => {
