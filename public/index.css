@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 650px;
+  height: 525px;
+}
