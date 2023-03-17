@@ -5,6 +5,7 @@ import path from 'path';
 import { Phone } from '../model/phone';
 import { products } from './data/products';
 
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const phones: any[] = [];
 
@@ -26,6 +27,6 @@ jsonsInDir.forEach((file) => {
   await Product.bulkCreate(products);
 
   await Phone.sync({ alter: true });
-
+  
   await Product.sync({ alter: true });
 })();
