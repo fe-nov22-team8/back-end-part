@@ -6,7 +6,7 @@ import fs from 'fs';
 import path from 'path';
 import { Test } from '../model/phone';
 
-const phones: any[] = [];
+export const phones: any[] = [];
 
 const jsonsInDir = fs
   .readdirSync('./src/utils/data/phones')
@@ -21,52 +21,6 @@ jsonsInDir.forEach((file) => {
 (async () => {
   dbInit();
 
-  const a = phones.map((phone) => {
-    const { id, namespaceId, capacityAvailable } = phone;
-
-    return {
-      id,
-      namespaceId,
-      capacityAvailable,
-    };
-  });
-
-  await Test.bulkCreate(a);
-
-  // const a = products.map(prod => {
-  //   const {
-  //     category,
-  //     phoneId,
-  //     itemId,
-  //     name,
-  //     fullPrice,
-  //     price,
-  //     screen,
-  //     capacity,
-  //     color,
-  //     ram,
-  //     year,
-  //     image
-  //   } = prod;
-
-  //   return {
-  //     category,
-  //     phoneId,
-  //     itemId,
-  //     name,
-  //     fullPrice,
-  //     price,
-  //     screen,
-  //     capacity,
-  //     color,
-  //     ram,
-  //     year,
-  //     image
-  //   }
-  // })
-
-  // await Product.bulkCreate(a)
-
-  await Test.sync({ alter: true });
+  // await Test.sync({ alter: true });
   await Product.sync({ alter: true });
 })();
