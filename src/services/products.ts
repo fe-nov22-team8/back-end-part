@@ -7,8 +7,12 @@ export const getAll = async (): Promise<ProductType[]> => {
   return products;
 };
 
-export const getOneById = async (id: number): Promise<ProductType | null> => {
-  const product = await Product.findByPk(id);
+export const getByPageAndSize = async (page: number, PAGE_SIZE: number): Promise<ProductType[]> => {
+  const products = await Product.findAll({
+    limit: PAGE_SIZE,
+    offset: (page - 1) * PAGE_SIZE,
+    order: [['year', 'DESC']],
+  });
 
-  return product || null;
-}
+  return products;
+};
