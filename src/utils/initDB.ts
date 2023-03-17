@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import { Sequelize } from 'sequelize-typescript';
 import { Product } from '../model/product';
-import { Test } from '../model/phone';
+import { Phone } from '../model/phone';
 
 dotenv.config();
 
@@ -10,7 +10,7 @@ const DBURL = `postgres://${PGUSER}:${PGPASSWORD}@${PGHOST}/${PGDATABASE}`;
 
 export const dbInit = () => {
   return new Sequelize(DBURL, {
-    models: [Product, Test],
+    models: [Product, Phone],
     dialectOptions: {
       ssl: {
         rejectUnauthorized: true,

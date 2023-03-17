@@ -1,12 +1,13 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Product } from '../model/product';
 import { dbInit } from './initDB';
-// import { products } from './data/products';
 import fs from 'fs';
 import path from 'path';
-import { Test } from '../model/phone';
+import { Phone } from '../model/phone';
+import { products } from './data/products';
 
-export const phones: any[] = [];
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const phones: any[] = [];
 
 const jsonsInDir = fs
   .readdirSync('./src/utils/data/phones')
@@ -21,6 +22,11 @@ jsonsInDir.forEach((file) => {
 (async () => {
   dbInit();
 
-  // await Test.sync({ alter: true });
+  await Phone.bulkCreate(phones);
+
+  await Product.bulkCreate(products);
+
+  await Phone.sync({ alter: true });
+  
   await Product.sync({ alter: true });
 })();
