@@ -1,11 +1,11 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Product } from '../model/product';
 import { dbInit } from './initDB';
-// import { products } from './data/products';
 import fs from 'fs';
 import path from 'path';
-import { Test } from '../model/phone';
+import { Phone } from '../model/phone';
+import { products } from './data/products';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const phones: any[] = [];
 
 const jsonsInDir = fs
@@ -21,52 +21,11 @@ jsonsInDir.forEach((file) => {
 (async () => {
   dbInit();
 
-  const a = phones.map((phone) => {
-    const { id, namespaceId, capacityAvailable } = phone;
+  await Phone.bulkCreate(phones);
 
-    return {
-      id,
-      namespaceId,
-      capacityAvailable,
-    };
-  });
+  await Product.bulkCreate(products);
 
-  await Test.bulkCreate(a);
+  await Phone.sync({ alter: true });
 
-  // const a = products.map(prod => {
-  //   const {
-  //     category,
-  //     phoneId,
-  //     itemId,
-  //     name,
-  //     fullPrice,
-  //     price,
-  //     screen,
-  //     capacity,
-  //     color,
-  //     ram,
-  //     year,
-  //     image
-  //   } = prod;
-
-  //   return {
-  //     category,
-  //     phoneId,
-  //     itemId,
-  //     name,
-  //     fullPrice,
-  //     price,
-  //     screen,
-  //     capacity,
-  //     color,
-  //     ram,
-  //     year,
-  //     image
-  //   }
-  // })
-
-  // await Product.bulkCreate(a)
-
-  await Test.sync({ alter: true });
   await Product.sync({ alter: true });
 })();

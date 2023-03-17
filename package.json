@@ -17,6 +17,7 @@
     "lint-staged": "^13.2.0",
     "nodemon": "^2.0.21",
     "prettier": "2.8.4",
+    "sequelize-cli": "^6.6.0",
     "sequelize-typescript": "^2.1.5",
     "swc": "^1.0.11",
     "swc-node": "^1.0.0",
