@@ -18,107 +18,107 @@ export class Phone extends Model {
   @Column({
     type: DataType.STRING,
   })
-  id!: string;
+    id!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  namespaceId!: string;
+    namespaceId!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  name!: string;
+    name!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.ARRAY(DataType.STRING),
   })
-  capacityAvailable!: string[];
+    capacityAvailable!: string[];
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  capacity!: string;
+    capacity!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.INTEGER,
   })
-  priceRegular!: number;
+    priceRegular!: number;
 
   @AllowNull(false)
   @Column({
     type: DataType.INTEGER,
   })
-  priceDiscount!: number;
+    priceDiscount!: number;
 
   @AllowNull(false)
   @Column({
     type: DataType.ARRAY(DataType.STRING),
   })
-  colorsAvailable!: string[];
+    colorsAvailable!: string[];
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  color!: string;
+    color!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.ARRAY(DataType.STRING),
   })
-  images!: string[];
+    images!: string[];
 
   @AllowNull(false)
   @Column({
     type: DataType.ARRAY(DataType.JSON),
   })
-  description!: string;
+    description!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  screen!: string;
+    screen!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  resolution!: string;
+    resolution!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  processor!: string;
-  
-  @AllowNull(false)
-  @Column({
-    type: DataType.STRING,
-  })
-  ram!: string;
+    processor!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  camera!: string;
-  
+    ram!: string;
+
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  zoom!: string;
+    camera!: string;
+
+  @AllowNull(false)
+  @Column({
+    type: DataType.STRING,
+  })
+    zoom!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.ARRAY(DataType.STRING),
   })
-  cell!: string[];
+    cell!: string[];
 }

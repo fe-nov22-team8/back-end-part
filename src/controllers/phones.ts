@@ -1,22 +1,22 @@
 import { Request, Response } from 'express';
 import { getAll, getById } from '../services/phones';
 
-export const getAllPhones = (
+export const getAllPhones = async (
   req: Request,
   res: Response,
-): void => {
-  const phones = getAll();
+): Promise<void> => {
+  const phones = await getAll();
 
   res.send(phones);
 };
 
-export const getPhoneById = (
+export const getPhoneById = async (
   req: Request,
   res: Response,
-): void => {
+): Promise<void> => {
   const { phoneId } = req.params;
 
-  const phone = getById(phoneId);
+  const phone = await getById(phoneId);
 
   if (!phone) {
     res.sendStatus(400);
