@@ -1,3 +1,5 @@
+/* eslint indent: 0 */
+
 import {
   AllowNull,
   AutoIncrement,
@@ -20,80 +22,80 @@ export class Product extends Model {
   @Column({
     type: DataType.INTEGER,
   })
-    id!: number;
+  id!: number;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-    category!: string;
+  category!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
     field: 'phone_id',
   })
-    phoneId!: string;
+  phoneId!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
     field: 'item_id',
   })
-    itemId!: string;
+  itemId!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-    name!: string;
+  name!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.INTEGER,
     field: 'full_price',
   })
-    fullPrice!: number;
+  fullPrice!: number;
 
   @AllowNull(false)
   @Column({
     type: DataType.INTEGER,
   })
-    price!: number;
+  price!: number;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-    screen!: string;
+  screen!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-    capacity!: string;
+  capacity!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-    color!: string;
+  color!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-    ram!: string;
+  ram!: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.INTEGER,
   })
-    year!: number;
+  year!: number;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-    image!: string;
+  image!: string;
 }
