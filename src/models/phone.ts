@@ -1,3 +1,5 @@
+/* eslint indent: 0 */
+
 import {
   AllowNull,
   Column,
@@ -97,7 +99,7 @@ export class Phone extends Model {
     type: DataType.STRING,
   })
   processor!: string;
-  
+
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
@@ -109,7 +111,7 @@ export class Phone extends Model {
     type: DataType.STRING,
   })
   camera!: string;
-  
+
   @AllowNull(false)
   @Column({
     type: DataType.STRING,

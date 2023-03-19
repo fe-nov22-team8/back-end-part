@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import { Sequelize } from 'sequelize-typescript';
-import { Product } from '../model/product';
-import { Phone } from '../model/phone';
+import { Product } from '../models/product';
+import { Phone } from '../models/phone';
 
 dotenv.config();
 

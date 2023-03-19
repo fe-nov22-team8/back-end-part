@@ -1,5 +1,8 @@
 import express from 'express';
-import { getProductsByPageAndSize, getProductById } from '../controllers/products';
+import {
+  getProductsByPageAndSize,
+  getProductById,
+} from '../controllers/products';
 
 export const productRouter = express.Router();
 

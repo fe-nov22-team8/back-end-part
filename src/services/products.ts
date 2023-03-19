@@ -1,4 +1,4 @@
-import { Product } from '../model/product';
+import { Product } from '../models/product';
 import { Product as ProductType } from '../types/product';
 
 export const getAll = async (): Promise<ProductType[]> => {
@@ -13,11 +13,17 @@ export const getById = async (id: number): Promise<ProductType | null> => {
   return product || null;
 };
 
-export const getByPageAndSize = async (page: number, PAGE_SIZE: number): Promise<ProductType[]> => {
+export const getByPageAndSize = async (
+  page: number,
+  PAGE_SIZE: number,
+  sortBy: string,
+): Promise<ProductType[]> => {
+  const order = sortBy === 'year' ? 'DESC' : 'ASC';
+
   const products = await Product.findAll({
     limit: PAGE_SIZE,
     offset: (page - 1) * PAGE_SIZE,
-    order: [['year', 'DESC']],
+    order: [[sortBy, order]],
   });
 
   return products;

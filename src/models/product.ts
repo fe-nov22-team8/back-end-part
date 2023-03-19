@@ -1,3 +1,5 @@
+/* eslint indent: 0 */
+
 import {
   AllowNull,
   AutoIncrement,
