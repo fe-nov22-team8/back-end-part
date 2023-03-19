@@ -5,30 +5,48 @@ export const getProductsByPageAndSize = async (
   req: Request,
   res: Response,
 ): Promise<void> => {
-  const { page, size, sort } = req.query;
+  const { 
+    page, 
+    size, 
+    sort, 
+    order,
+  } = req.query;
 
-  if (page === undefined && size === undefined && sort === undefined) {
+  if (!page && !size && !sort && !order) {
     const products = await getAll();
 
     res.send(products);
 
     return;
-  } else if (page !== undefined && size !== undefined && sort !== undefined) {
+  } else if (
+    page !== undefined && 
+    size !== undefined && 
+    sort !== undefined &&
+    order !== undefined
+  ) {
     if (isNaN(+page) || isNaN(+size)) {
       res.sendStatus(400);
 
       return;
     }
 
+    const prepOrder = order.toString().toUpperCase();
+    const prepSort = sort.toString();
     const sorts = ['year', 'name', 'price'];
+    const orders = ['ASC', 'DESC'];
 
-    if (!sorts.includes(sort.toString())) {
+    if (!sorts.includes(prepSort) || !orders.includes(prepOrder)) {
       res.sendStatus(400);
 
       return;
     }
 
-    const products = await getByPageAndSize(+page, +size, sort.toString());
+    const products = await getByPageAndSize(
+      +page, 
+      +size, 
+      prepSort, 
+      prepOrder,
+    );
 
     res.send(products);
   } else {

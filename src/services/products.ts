@@ -17,9 +17,8 @@ export const getByPageAndSize = async (
   page: number,
   PAGE_SIZE: number,
   sortBy: string,
+  order: string,
 ): Promise<ProductType[]> => {
-  const order = sortBy === 'year' ? 'DESC' : 'ASC';
-
   const products = await Product.findAll({
     limit: PAGE_SIZE,
     offset: (page - 1) * PAGE_SIZE,
