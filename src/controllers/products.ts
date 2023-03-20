@@ -1,8 +1,8 @@
-import { 
-  getAll, 
-  getByPageAndSize, 
-  getById, 
-  getRecommended, 
+import {
+  getAll,
+  getByPageAndSize,
+  getById,
+  getRecommended,
 } from '../services/products';
 import { Request, Response } from 'express';
 
@@ -10,12 +10,7 @@ export const getProductsByPageAndSize = async (
   req: Request,
   res: Response,
 ): Promise<void> => {
-  const { 
-    page, 
-    size, 
-    sort, 
-    order,
-  } = req.query;
+  const { page, size, sort, order } = req.query;
 
   if (!page && !size && !sort && !order) {
     const products = await getAll();
@@ -24,8 +19,8 @@ export const getProductsByPageAndSize = async (
 
     return;
   } else if (
-    page !== undefined && 
-    size !== undefined && 
+    page !== undefined &&
+    size !== undefined &&
     sort !== undefined &&
     order !== undefined
   ) {
@@ -46,12 +41,7 @@ export const getProductsByPageAndSize = async (
       return;
     }
 
-    const products = await getByPageAndSize(
-      +page, 
-      +size, 
-      prepSort, 
-      prepOrder,
-    );
+    const products = await getByPageAndSize(+page, +size, prepSort, prepOrder);
 
     res.send(products);
   } else {
@@ -81,7 +71,7 @@ export const getProductById = async (
 };
 
 export const getRecommendedProducts = async (
-  req: Request, 
+  req: Request,
   res: Response,
 ): Promise<void> => {
   const { id } = req.params;
