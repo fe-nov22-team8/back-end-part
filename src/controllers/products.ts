@@ -1,4 +1,9 @@
-import { getAll, getByPageAndSize, getById } from '../services/products';
+import { 
+  getAll, 
+  getByPageAndSize, 
+  getById, 
+  getRecommended, 
+} from '../services/products';
 import { Request, Response } from 'express';
 
 export const getProductsByPageAndSize = async (
@@ -73,4 +78,25 @@ export const getProductById = async (
   const product = await getById(+id);
 
   res.send(product);
+};
+
+export const getRecommendedProducts = async (
+  req: Request, 
+  res: Response,
+): Promise<void> => {
+  const { id } = req.params;
+
+  if (isNaN(+id)) {
+    res.sendStatus(400);
+
+    return;
+  } else if (+id > 71) {
+    res.send('There is only 71 product in DB');
+
+    return;
+  }
+
+  const recommendedProducts = await getRecommended(+id);
+
+  res.send(recommendedProducts);
 };

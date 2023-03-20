@@ -1,3 +1,4 @@
+import { Op } from 'sequelize';
 import { Product } from '../models/product';
 import { Product as ProductType } from '../types/product';
 
@@ -26,4 +27,23 @@ export const getByPageAndSize = async (
   });
 
   return products;
+};
+
+export const getRecommended = async (id: number) => {
+  const product = await getById(id);
+
+  if (product !== null) {
+    const recommended = await Product.findAll({
+      where: {
+        [Op.or]: [
+          { color: product.color },
+          { ram: product.ram },
+          { capacity: product.capacity },
+          { screen: product.screen },
+        ],
+      },
+    });
+
+    return recommended;
+  }
 };
