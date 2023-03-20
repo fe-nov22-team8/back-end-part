@@ -3,6 +3,8 @@ import {
   getByPageAndSize,
   getById,
   getRecommended,
+  getNew,
+  getDiscountProducts,
 } from '../services/products';
 import { Request, Response } from 'express';
 
@@ -89,4 +91,22 @@ export const getRecommendedProducts = async (
   const recommendedProducts = await getRecommended(+id);
 
   res.send(recommendedProducts);
+};
+
+export const getNewProducts = async (
+  req: Request, 
+  res: Response,
+): Promise<void> => {
+  const newProducts = await getNew();
+
+  res.send(newProducts);
+};
+
+export const getProductsWithDiscount = async (
+  req: Request, 
+  res: Response,
+): Promise<void> => {
+  const discountProducts = await getDiscountProducts();
+
+  res.send(discountProducts);
 };
