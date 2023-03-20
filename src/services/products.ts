@@ -1,4 +1,4 @@
-import { Op } from 'sequelize';
+import { Op, literal } from 'sequelize';
 import { Product } from '../models/product';
 import { Product as ProductType } from '../types/product';
 
@@ -46,4 +46,20 @@ export const getRecommended = async (id: number) => {
 
     return recommended;
   }
+};
+
+export const getNew = async () => {
+  const newProducts = await Product.findAll({
+    where: { year: '2019' }
+  });
+
+  return newProducts;
+};
+
+export const getDiscountProducts = async () => {
+  const discountProducts = await Product.findAll({
+    order: literal('(full_price - price) DESC')
+  });
+
+  return discountProducts;
 };
