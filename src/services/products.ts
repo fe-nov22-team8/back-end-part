@@ -3,7 +3,9 @@ import { Product } from '../models/product';
 import { Product as ProductType } from '../types/product';
 
 export const getAll = async (): Promise<ProductType[]> => {
-  const products = await Product.findAll();
+  const products = await Product.findAll({
+    where: { category: 'phones' },
+  });
 
   return products;
 };
@@ -21,6 +23,7 @@ export const getByPageAndSize = async (
   order: string,
 ): Promise<ProductType[]> => {
   const products = await Product.findAll({
+    where: { category: 'phones' },
     limit: PAGE_SIZE,
     offset: (page - 1) * PAGE_SIZE,
     order: [[sortBy, order]],
@@ -50,7 +53,7 @@ export const getRecommended = async (id: number) => {
 
 export const getNew = async () => {
   const newProducts = await Product.findAll({
-    where: { year: '2019' }
+    where: { year: '2019' },
   });
 
   return newProducts;
@@ -58,7 +61,7 @@ export const getNew = async () => {
 
 export const getDiscountProducts = async () => {
   const discountProducts = await Product.findAll({
-    order: literal('(full_price - price) DESC')
+    order: literal('(full_price - price) DESC'),
   });
 
   return discountProducts;
