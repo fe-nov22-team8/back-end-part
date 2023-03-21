@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { getAll } from '../services/tablets';
+import { getAll, getInfo } from '../services/tablets';
 
 export const getAllTablets = async (
   req: Request,
@@ -8,4 +8,12 @@ export const getAllTablets = async (
   const tablets = await getAll();
 
   res.send(tablets);
+};
+
+export const getTabletsInfo = (req: Request, res: Response) => {
+  const { tabletId } = req.params;
+
+  const tabletsInfo = getInfo(tabletId);
+
+  res.send(tabletsInfo);
 };
