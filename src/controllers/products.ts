@@ -94,7 +94,7 @@ export const getRecommendedProducts = async (
 };
 
 export const getNewProducts = async (
-  req: Request, 
+  req: Request,
   res: Response,
 ): Promise<void> => {
   const newProducts = await getNew();
@@ -103,7 +103,7 @@ export const getNewProducts = async (
 };
 
 export const getProductsWithDiscount = async (
-  req: Request, 
+  req: Request,
   res: Response,
 ): Promise<void> => {
   const discountProducts = await getDiscountProducts();

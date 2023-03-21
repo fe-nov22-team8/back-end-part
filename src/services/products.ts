@@ -53,7 +53,7 @@ export const getRecommended = async (id: number) => {
 
 export const getNew = async () => {
   const newProducts = await Product.findAll({
-    where: { year: '2019' }
+    where: { year: '2019' },
   });
 
   return newProducts;
@@ -61,7 +61,7 @@ export const getNew = async () => {
 
 export const getDiscountProducts = async () => {
   const discountProducts = await Product.findAll({
-    order: literal('(full_price - price) DESC')
+    order: literal('(full_price - price) DESC'),
   });
 
   return discountProducts;
