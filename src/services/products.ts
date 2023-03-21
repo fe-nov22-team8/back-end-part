@@ -3,7 +3,9 @@ import { Product } from '../models/product';
 import { Product as ProductType } from '../types/product';
 
 export const getAll = async (): Promise<ProductType[]> => {
-  const products = await Product.findAll();
+  const products = await Product.findAll({
+    where: { category: 'phones' },
+  });
 
   return products;
 };
@@ -21,6 +23,7 @@ export const getByPageAndSize = async (
   order: string,
 ): Promise<ProductType[]> => {
   const products = await Product.findAll({
+    where: { category: 'phones' },
     limit: PAGE_SIZE,
     offset: (page - 1) * PAGE_SIZE,
     order: [[sortBy, order]],

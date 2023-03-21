@@ -4,6 +4,7 @@ import { Phone } from '../models/phone';
 
 (async () => {
   dbInit();
+
   await Phone.sync({ alter: true });
 
   await Product.sync({ alter: true });
