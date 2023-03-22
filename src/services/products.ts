@@ -33,7 +33,7 @@ export const getByPageAndSize = async (
 };
 
 export const getRecommended = async (
-  id: number
+  id: number,
 ): Promise<ProductType[] | undefined> => {
   const product = await getById(id);
 
@@ -42,7 +42,6 @@ export const getRecommended = async (
       where: {
         category: 'phones',
         [Op.or]: [
-         
           { color: product.color },
           { ram: product.ram },
           { capacity: product.capacity },
@@ -57,7 +56,7 @@ export const getRecommended = async (
 
 export const getNew = async (): Promise<ProductType[]> => {
   const newProducts = await Product.findAll({
-    where: { 
+    where: {
       year: '2019',
       category: 'phones',
     },
@@ -68,6 +67,7 @@ export const getNew = async (): Promise<ProductType[]> => {
 
 export const getDiscountProducts = async (): Promise<ProductType[]> => {
   const discountProducts = await Product.findAll({
+    where: { category: 'phones' },
     order: literal('(full_price - price) DESC'),
   });
 
