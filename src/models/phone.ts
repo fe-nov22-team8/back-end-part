@@ -10,7 +10,7 @@ import {
 } from 'sequelize-typescript';
 
 @Table({
-  tableName: 'phonesMarket',
+  tableName: 'phones_market',
   createdAt: false,
   updatedAt: false,
 })
