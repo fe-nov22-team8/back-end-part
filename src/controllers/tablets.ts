@@ -10,10 +10,13 @@ export const getAllTablets = async (
   res.send(tablets);
 };
 
-export const getTabletsInfo = (req: Request, res: Response) => {
+export const getTabletsInfo = async (
+  req: Request, 
+  res: Response,
+): Promise<void> => {
   const { tabletId } = req.params;
 
-  const tabletsInfo = getInfo(tabletId);
+  const tabletsInfo = await getInfo(tabletId);
 
   res.send(tabletsInfo);
 };
