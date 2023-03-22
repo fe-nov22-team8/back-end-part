@@ -61,6 +61,7 @@ export class Phone extends Model {
   @AllowNull(false)
   @Column({
     type: DataType.ARRAY(DataType.STRING),
+    field: 'colors_available',
   })
   colorsAvailable!: string[];
 
