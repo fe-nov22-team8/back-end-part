@@ -21,7 +21,7 @@ export const getProductsByPageAndSize = async (
 
     return;
   }
- 
+
   const prepPage = page || 1;
   const prepSize = size || 71;
   const prepOrder = order?.toString().toUpperCase();

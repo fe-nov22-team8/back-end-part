@@ -24,7 +24,7 @@ export const getByPageAndSize = async (
   sortBy = 'name',
   order = 'asc',
   query = '',
-): Promise<ProductType[]> => {
+)=> {
   const products = await Product.findAll({
     where: {
       category: 'phones',
@@ -37,7 +37,17 @@ export const getByPageAndSize = async (
     order: [[sortBy, order]],
   });
 
-  return products;
+  const total = await Product.count({
+    where: {
+      category: 'phones',
+      name: {
+        [Op.iLike]: `%${query}%`,
+      },
+      
+    }
+  });
+
+  return { products, total };
 };
 
 export const getRecommended = async (
