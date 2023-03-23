@@ -21,12 +21,12 @@ export const getById = async (id: string): Promise<ProductType | null> => {
 export const getByPageAndSize = async (
   page: number,
   PAGE_SIZE: number,
-  sortBy: string,
-  order: string,
-  query: string,
+  sortBy = 'name',
+  order = 'asc',
+  query = '',
 ): Promise<ProductType[]> => {
   const products = await Product.findAll({
-    where: { 
+    where: {
       category: 'phones',
       name: {
         [Op.iLike]: `%${query}%`,

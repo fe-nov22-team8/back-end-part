@@ -20,43 +20,22 @@ export const getProductsByPageAndSize = async (
     res.send(products);
 
     return;
-  } else if (
-    page !== undefined &&
-    size !== undefined &&
-    sort !== undefined &&
-    order !== undefined &&
-    query !== undefined
-  ) {
-    if (isNaN(+page) || isNaN(+size)) {
-      res.sendStatus(400);
-
-      return;
-    }
-
-    const prepOrder = order.toString().toUpperCase();
-    const prepSort = sort.toString();
-    const prepQuery = query.toString();
-    const sorts = ['year', 'name', 'price'];
-    const orders = ['ASC', 'DESC'];
-
-    if (!sorts.includes(prepSort) || !orders.includes(prepOrder)) {
-      res.sendStatus(400);
-
-      return;
-    }
-
-    const products = await getByPageAndSize(
-      +page, 
-      +size, 
-      prepSort, 
-      prepOrder, 
-      prepQuery,
-    );
-
-    res.send(products);
-  } else {
-    res.sendStatus(400);
   }
+ 
+  const prepPage = page || 1;
+  const prepSize = size || 71;
+  const prepOrder = order?.toString().toUpperCase();
+  const prepSort = sort?.toString();
+  const prepQuery = query?.toString();
+  const products = await getByPageAndSize(
+    +prepPage,
+    +prepSize,
+    prepSort,
+    prepOrder,
+    prepQuery,
+  );
+
+  res.send(products);
 };
 
 export const getProductById = async (
