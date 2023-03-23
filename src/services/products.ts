@@ -23,9 +23,15 @@ export const getByPageAndSize = async (
   PAGE_SIZE: number,
   sortBy: string,
   order: string,
+  query: string,
 ): Promise<ProductType[]> => {
   const products = await Product.findAll({
-    where: { category: 'phones' },
+    where: { 
+      category: 'phones',
+      name: {
+        [Op.iLike]: `%${query}%`,
+      },
+    },
     limit: PAGE_SIZE,
     offset: (page - 1) * PAGE_SIZE,
     order: [[sortBy, order]],
