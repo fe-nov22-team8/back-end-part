@@ -10,8 +10,10 @@ export const getAll = async (): Promise<ProductType[]> => {
   return products;
 };
 
-export const getById = async (id: number): Promise<ProductType | null> => {
-  const product = await Product.findByPk(id);
+export const getById = async (id: string): Promise<ProductType | null> => {
+  const product = await Product.findOne({
+    where: { itemId: id },
+  });
 
   return product || null;
 };
@@ -33,7 +35,7 @@ export const getByPageAndSize = async (
 };
 
 export const getRecommended = async (
-  id: number,
+  id: string,
 ): Promise<ProductType[] | undefined> => {
   const product = await getById(id);
 

@@ -11,7 +11,7 @@ export const getAllTablets = async (
 };
 
 export const getTabletsInfo = async (
-  req: Request, 
+  req: Request,
   res: Response,
 ): Promise<void> => {
   const { tabletId } = req.params;

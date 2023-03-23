@@ -15,7 +15,7 @@ export const getProductsByPageAndSize = async (
   const { page, size, sort, order } = req.query;
 
   if (!page && !size && !sort && !order) {
-    const products = await getAll();
+    const products = await getAll(); 
 
     res.send(products);
 
@@ -57,17 +57,7 @@ export const getProductById = async (
 ): Promise<void> => {
   const { id } = req.params;
 
-  if (isNaN(+id)) {
-    res.sendStatus(400);
-
-    return;
-  } else if (+id > 71) {
-    res.send('There is only 71 product in DB');
-
-    return;
-  }
-
-  const product = await getById(+id);
+  const product = await getById(id);
 
   res.send(product);
 };
@@ -78,17 +68,7 @@ export const getRecommendedProducts = async (
 ): Promise<void> => {
   const { id } = req.params;
 
-  if (isNaN(+id)) {
-    res.sendStatus(400);
-
-    return;
-  } else if (+id > 71) {
-    res.send('There is only 71 product in DB');
-
-    return;
-  }
-
-  const recommendedProducts = await getRecommended(+id);
+  const recommendedProducts = await getRecommended(id);
 
   res.send(recommendedProducts);
 };
