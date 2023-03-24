@@ -24,7 +24,7 @@ export const getByPageAndSize = async (
   sortBy = 'name',
   order = 'asc',
   query = '',
-)=> {
+) => {
   const products = await Product.findAll({
     where: {
       category: 'phones',
@@ -37,17 +37,7 @@ export const getByPageAndSize = async (
     order: [[sortBy, order]],
   });
 
-  const total = await Product.count({
-    where: {
-      category: 'phones',
-      name: {
-        [Op.iLike]: `%${query}%`,
-      },
-      
-    }
-  });
-
-  return { products, total };
+  return products;
 };
 
 export const getRecommended = async (
